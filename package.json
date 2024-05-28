@@ -1,0 +1,44 @@
+{
+  "name": "@liueng-ext/samples",
+  "version": "1.0.0",
+  "description": "vscode extensions samples",
+  "workspaces": [
+    "samples/**"
+  ],
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "main": "",
+  "scripts": {
+    "vscode:debug": "node .scripts/run.js",
+    "lint": "lint-staged",
+    "prepare": "husky"
+  },
+  "keywords": [
+    "vscode",
+    "extensions"
+  ],
+  "author": "liueng0814@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.89.0",
+    "@typescript-eslint/eslint-plugin": "^7.7.1",
+    "@typescript-eslint/parser": "^7.7.1",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.3.9",
+    "comment-json": "^4.2.3",
+    "esbuild": "^0.21.3",
+    "eslint": "^8.57.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.5",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.4.5",
+    "yargs-parser": "^21.1.1"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": "eslint --fix"
+  },
+  "contributes": {}
+}

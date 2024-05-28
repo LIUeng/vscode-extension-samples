@@ -1,0 +1,13 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "npm: webpack",
+      "type": "npm",
+      "script": "webpack",
+      "options": {
+        "cwd": "${workspaceFolder}/samples/webpack5"
+      }
+    }
+  ]
+}
