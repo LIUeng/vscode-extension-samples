@@ -1,13 +1,17 @@
 # Vscode extensions
 
-## Start Extension
+- Test
+- Run
+- Debug
+
+## Start extension
 
 > Usage
 
 ```shell
 # specific sample
 # c => samples/
-npm run vscode:debug -- -c=sample
+npm run vscode:debug -- -c=?
 ```
 
 then use vscode `Run and Debug` test extensions
