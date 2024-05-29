@@ -1,18 +1,4 @@
 {
   "version": "0.2.0",
-  "configurations": [
-    {
-      "name": "Run Extension",
-      "type": "extensionHost",
-      "request": "launch",
-      "runtimeExecutable": "${execPath}",
-      "args": [
-        "--extensionDevelopmentPath=${workspaceRoot}"
-      ],
-      "outFiles": [
-        "${workspaceFolder}/samples/webview/out/**/*.js"
-      ],
-      "preLaunchTask": "npm: watch"
-    }
-  ]
+  "configurations": []
 }

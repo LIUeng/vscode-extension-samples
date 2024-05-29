@@ -8,7 +8,7 @@
   "engines": {
     "vscode": "^1.89.0"
   },
-  "main": "samples/webview/out/extension.js",
+  "main": "",
   "scripts": {
     "vscode:debug": "node .scripts/run.js",
     "lint": "lint-staged",
@@ -43,18 +43,5 @@
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged && node .hooks/reset.js"
   },
-  "contributes": {
-    "commands": [
-      {
-        "command": "catCoding.start",
-        "title": "Start cat coding session",
-        "category": "Cat Coding"
-      },
-      {
-        "command": "catCoding.doRefactor",
-        "title": "Do some refactoring",
-        "category": "Cat Coding"
-      }
-    ]
-  }
+  "contributes": {}
 }
