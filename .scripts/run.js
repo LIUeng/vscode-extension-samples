@@ -38,7 +38,8 @@ function writeVscodeJson(vscodeType) {
 
 // sync write contributes to root package.json
 const targetSample = require(targetPath + "/package.json");
-pkg.main = `./samples/${workspace}/dist/extension.js`;
+// pkg.main = `./samples/${workspace}/dist/extension.js`;
+pkg.main = path.join('./samples', workspace, targetSample.main);
 pkg.contributes = targetSample.contributes;
 fs.writeFileSync(
   path.resolve(__dirname, "../package.json"),

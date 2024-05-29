@@ -6,7 +6,7 @@
 	"private": true,
 	"license": "MIT",
 	"activationEvents": [],
-	"main": "samples/webpack5/dist/extension.js",
+	"main": "./dist/extension.js",
 	"contributes": {
 		"commands": [
 			{
