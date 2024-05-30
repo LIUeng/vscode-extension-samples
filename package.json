@@ -11,7 +11,7 @@
   "main": "",
   "scripts": {
     "vscode:debug": "node .scripts/run.js",
-    "lint": "lint-staged",
+    "lint": "eslint . --fix",
     "prepare": "simple-git-hooks"
   },
   "keywords": [
@@ -38,10 +38,10 @@
     "yargs-parser": "^21.1.1"
   },
   "lint-staged": {
-    "*.{js,ts,jsx,tsx}": "eslint --fix"
+    "*.{js,ts,jsx,tsx}": "eslint . --fix"
   },
   "simple-git-hooks": {
-    "pre-commit": "npx lint-staged && node .hooks/reset.js"
+    "pre-commit": "node .hooks/reset.js && git add . && npx lint-staged"
   },
   "contributes": {}
 }
